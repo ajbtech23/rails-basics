@@ -1,2 +1,10 @@
 <h1>The Boy Who Lived</h1>
 <%= @about_me %>
+
+<h2>You should get to know the following about me </h2>
+
+<ul>
+  <% @about_me_details.each do |key, detail| %>
+    <li><%= "Here's an interesting bit of trivia about me: #{key} - #{detail}" %></li>
+  <% end %>
+</ul>

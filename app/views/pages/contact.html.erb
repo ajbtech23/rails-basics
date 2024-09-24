@@ -1,2 +1,8 @@
 <h1>Contact Me 🚀</h1>
 <%= @contact_me %>
+
+<ul>
+  <% @contact_numbers.each do |contact_number| %>
+    <li><%= contact_number * 10 %></li>
+  <% end %>
+</ul>

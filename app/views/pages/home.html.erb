@@ -1,1 +1,12 @@
 <h1>Welcome Home 🏡</h1>
+<h2>Where are you looking to rest your head next?</h2>
+
+<% opinions_on_homes = @homes_away_from_home.map do |home| %>
+  <% "My time spent living in #{home} will always be near and dear to me 😎"%>
+<% end %>
+
+<ul>
+  <% opinions_on_homes.each do |opinion| %>
+    <li><%= opinion %></li>
+  <% end %>
+</ul>
