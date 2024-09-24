@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get "/about", to: "pages#about", as: :about
   get "/contact", to: "pages#contact", as: :contact
   get "/members", to: "pages#members", as: :members
+  get "/password", to: "pages#password", as: :password
 end

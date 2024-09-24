@@ -20,4 +20,12 @@ class PagesController < ApplicationController
   def members
     @members = [ "Giannis", "LeBron", "PG", "KD", "Anthony Edwards" ]
   end
+
+  def password
+    @passwords = [ "elmagico", "pope", "lahawla" ]
+
+    if params[:password]
+      @password_acceptance_status = @passwords.include?(params[:password])
+    end
+  end
 end
